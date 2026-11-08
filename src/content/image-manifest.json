@@ -1,0 +1,366 @@
+{
+  "command-1": {
+    "width": 2400,
+    "height": 1500,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "command-c": {
+    "width": 2160,
+    "height": 1598,
+    "widths": [
+      480,
+      960,
+      1600,
+      2160
+    ]
+  },
+  "command-m": {
+    "width": 780,
+    "height": 1688,
+    "widths": [
+      480,
+      780
+    ]
+  },
+  "comono-1": {
+    "width": 2400,
+    "height": 1500,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "comono-2": {
+    "width": 2400,
+    "height": 1500,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "comono-3": {
+    "width": 2400,
+    "height": 1500,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "comono-c": {
+    "width": 2160,
+    "height": 1598,
+    "widths": [
+      480,
+      960,
+      1600,
+      2160
+    ]
+  },
+  "comono-m": {
+    "width": 780,
+    "height": 1688,
+    "widths": [
+      480,
+      780
+    ]
+  },
+  "hostcomm-1": {
+    "width": 2400,
+    "height": 1500,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "hostcomm-2": {
+    "width": 2400,
+    "height": 1500,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "hostcomm-3": {
+    "width": 2400,
+    "height": 1500,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "hostcomm-c": {
+    "width": 2160,
+    "height": 1598,
+    "widths": [
+      480,
+      960,
+      1600,
+      2160
+    ]
+  },
+  "hostcomm-m": {
+    "width": 780,
+    "height": 1688,
+    "widths": [
+      480,
+      780
+    ]
+  },
+  "keybridge-1": {
+    "width": 2400,
+    "height": 1500,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "keybridge-2": {
+    "width": 2400,
+    "height": 1500,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "keybridge-3": {
+    "width": 2400,
+    "height": 1500,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "keybridge-c": {
+    "width": 2160,
+    "height": 1598,
+    "widths": [
+      480,
+      960,
+      1600,
+      2160
+    ]
+  },
+  "keybridge-m": {
+    "width": 780,
+    "height": 1688,
+    "widths": [
+      480,
+      780
+    ]
+  },
+  "kwoat-1": {
+    "width": 2400,
+    "height": 1500,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "kwoat-2": {
+    "width": 2400,
+    "height": 1500,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "kwoat-3": {
+    "width": 2400,
+    "height": 1500,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "kwoat-c": {
+    "width": 2160,
+    "height": 1598,
+    "widths": [
+      480,
+      960,
+      1600,
+      2160
+    ]
+  },
+  "kwoat-m": {
+    "width": 780,
+    "height": 1688,
+    "widths": [
+      480,
+      780
+    ]
+  },
+  "powernest-1": {
+    "width": 2400,
+    "height": 1500,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "powernest-2": {
+    "width": 2400,
+    "height": 1500,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "powernest-3": {
+    "width": 2400,
+    "height": 1500,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "powernest-c": {
+    "width": 2160,
+    "height": 1598,
+    "widths": [
+      480,
+      960,
+      1600,
+      2160
+    ]
+  },
+  "powernest-m": {
+    "width": 780,
+    "height": 1688,
+    "widths": [
+      480,
+      780
+    ]
+  },
+  "resolvr-1": {
+    "width": 2400,
+    "height": 1500,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "resolvr-2": {
+    "width": 2400,
+    "height": 1500,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "resolvr-3": {
+    "width": 2400,
+    "height": 1500,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "resolvr-c": {
+    "width": 2160,
+    "height": 1598,
+    "widths": [
+      480,
+      960,
+      1600,
+      2160
+    ]
+  },
+  "resolvr-m": {
+    "width": 780,
+    "height": 1688,
+    "widths": [
+      480,
+      780
+    ]
+  },
+  "triumph-1": {
+    "width": 2400,
+    "height": 1500,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "triumph-2": {
+    "width": 2400,
+    "height": 1500,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "triumph-3": {
+    "width": 2400,
+    "height": 1500,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "triumph-c": {
+    "width": 2160,
+    "height": 1598,
+    "widths": [
+      480,
+      960,
+      1600,
+      2160
+    ]
+  },
+  "triumph-m": {
+    "width": 780,
+    "height": 1688,
+    "widths": [
+      480,
+      780
+    ]
+  }
+}
