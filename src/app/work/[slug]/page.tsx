@@ -97,7 +97,7 @@ export default async function CaseStudy({ params }: Params) {
       <section className="container-x py-[140px] max-[809px]:py-20" aria-labelledby="overview">
         <div className="mx-auto flex max-w-[860px] flex-col items-center text-center">
           <span data-reveal>
-            <Star size={40} color="var(--color-orange)" className="spin-slow" />
+            <Star size={40} color="var(--color-orange)" />
           </span>
           <span className="mt-8">
             <Eyebrow>Project overview</Eyebrow>

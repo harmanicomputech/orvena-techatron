@@ -1,4 +1,4 @@
-import { Button, Eyebrow, Img, MarqueeBand, Star, StarDisc, ThumbCluster } from '../ui';
+import { Button, Eyebrow, Img, MarqueeBand, Star, ThumbCluster } from '../ui';
 import { LogoMark } from '../Logo';
 import { ProjectCard } from '../ProjectCard';
 import { ProcessCards } from '../ProcessCards';
@@ -21,7 +21,6 @@ export function SelectedWork() {
             Every project starts with a business problem and ends with software that people and organisations rely on.
           </p>
         </div>
-        <StarDisc size={112} className="max-[809px]:hidden" />
       </div>
       <div className="mt-16 grid gap-x-7 gap-y-12 min-[810px]:grid-cols-2 max-[809px]:mt-10 max-[809px]:gap-y-6" data-reveal-group>
         {featuredProjects.map((p, i) => (
@@ -76,7 +75,6 @@ export function WhatWeDo() {
           <h2 id="wwd-title" className="t-h2 max-w-[700px]" data-split>
             We make complex technology simple to use, run and grow.
           </h2>
-          <StarDisc size={112} bg="var(--color-cream)" className="max-[809px]:hidden" />
         </div>
         <div className="mt-[120px] grid gap-14 min-[1200px]:grid-cols-[454px_1fr] max-[1199px]:mt-16">
           <div className="flex flex-col justify-end">
@@ -110,7 +108,7 @@ export function Approach() {
       <div className="guides" aria-hidden="true" />
       <div className="container-x relative pt-[120px] pb-[140px] max-[809px]:pt-20 max-[809px]:pb-24">
         <div className="mx-auto flex max-w-[600px] flex-col items-center text-center">
-          <span className="spin-slow" data-reveal>
+          <span data-reveal>
             <Star size={40} />
           </span>
           <span className="mt-10">
@@ -184,7 +182,7 @@ function Conviction() {
       </div>
       <div>
         <span data-reveal className="block w-fit">
-          <Star size={44} color="var(--color-yellow)" className="spin-slow" />
+          <Star size={44} color="var(--color-yellow)" />
         </span>
         <blockquote className="t-quote mt-8 max-w-[900px]" data-split>
           “We measure our work by what it changes for the business: processes that run reliably, customers who are better served, and systems that stay affordable to operate.”

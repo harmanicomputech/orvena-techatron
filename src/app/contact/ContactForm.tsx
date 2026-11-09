@@ -76,7 +76,7 @@ export function ContactForm() {
   if (status === 'sent')
     return (
       <div className="flex min-h-[420px] flex-col items-start justify-center" role="status">
-        <Star size={36} color="var(--color-orange)" className="spin-slow" />
+        <Star size={36} color="var(--color-orange)" />
         <p className="t-h4 mt-6">Thank you — your inquiry is with us.</p>
         <p className="mt-3 max-w-[420px] text-slate">We read every message personally and will reply by email with honest questions and a clear next step.</p>
       </div>

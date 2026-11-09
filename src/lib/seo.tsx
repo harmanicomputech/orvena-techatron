@@ -34,13 +34,16 @@ export const organizationLd = () => ({
   description: site.description,
   email: site.email,
   telephone: '+2349022016978',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: site.address.street,
-    addressLocality: site.address.locality,
-    addressRegion: site.address.region,
-    addressCountry: site.address.countryCode,
-  },
+  address: [
+    {
+      '@type': 'PostalAddress',
+      streetAddress: site.address.street,
+      addressLocality: site.address.locality,
+      addressRegion: site.address.region,
+      addressCountry: site.address.countryCode,
+    },
+    { '@type': 'PostalAddress', addressRegion: 'DE', addressCountry: 'US' },
+  ],
   areaServed: 'Worldwide',
   sameAs: site.social.map((s) => s.href),
   knowsAbout: ['Custom software development', 'Web application development', 'Mobile application development', 'AI integration', 'API development', 'Technology consulting'],

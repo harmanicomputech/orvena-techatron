@@ -10,7 +10,8 @@ The website of **Techatron Consulting Limited**, built to the visual specificati
   design tokens (colours, type scale, breakpoints 1200 / 810)
 - **GSAP 3** (ScrollTrigger, SplitText, CustomEase) for every timeline and scroll interaction
 - **Lenis** smooth scrolling (desktop, fine pointers only), driven from GSAP's ticker
-- **Host Grotesk** and **Archivo 900**, self-hosted from Fontsource via `next/font/local`
+- **Host Grotesk** (text), **Instrument Serif** italic (hero accent) and **Archivo 900**, self-hosted from Fontsource via `next/font/local`
+- **Logo**: vector trace of the official Techatron artwork (`src/content/logo-path.ts`, `public/brand/logo*.svg`). If you have the original vector logo, replace the path there.
 
 No other animation library is used. Everything animates `transform`, `opacity` or `clip-path`, and all motion is
 disabled under `prefers-reduced-motion`.
@@ -57,6 +58,9 @@ To add a project: drop screenshots into `assets/source/` (`<key>-c.jpg` at 1440Ã
 16:10 for the gallery, `<key>-m.jpg` for mobile), run `npm run images`, then add an entry to `src/content/projects.ts`.
 
 ## Content sources and items to review
+
+- Operations hubs: Lagos, Nigeria and Delaware, USA, serving clients globally (`src/content/site.ts`).
+- "More work" on /work comes from the Drive doc *Portfolio / Websites*; Doowe, Nebo Concept (Cloudflare bot checks), Goldbrooks, Brick Homes (502 errors) and The eBook Club (no response) could not be captured and are not listed yet.
 
 - Company details, services, process, convictions and standards come from techatronagency.com.
 - Project descriptions come from Techatron's verified portfolio (`techatron-v2` seed data). ElectionShield, Kwoat and

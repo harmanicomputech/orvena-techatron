@@ -364,3 +364,66 @@ export const workFilters = [
   { id: 'civic', label: 'Civic Tech' },
   { id: 'corporate', label: 'Corporate' },
 ] as const;
+
+// More work: corporate, commerce and creative websites. Descriptions from Techatron's portfolio
+// notes (Drive: Portfolio/Websites, Nov 2026); screenshots captured from each live site on 9 Nov 2026.
+export type MoreWork = { name: string; category: string; summary: string; url: string; image: string };
+
+export const moreWork: MoreWork[] = [
+  {
+    name: 'Zealot Chemicals',
+    category: 'Manufacturing / Construction materials',
+    summary: 'A corporate and product website for a manufacturer of Plaster of Paris (POP) cement, with product discovery and enquiries.',
+    url: 'https://zealotchemicals.com/',
+    image: 'zealot-c',
+  },
+  {
+    name: 'Nebo Stage',
+    category: 'Event production',
+    summary: 'A nationwide event production company: staging, rigging, lighting, LED screens, audio, media and livestreaming.',
+    url: 'https://nebostage.com.ng/',
+    image: 'nebostage-c',
+  },
+  {
+    name: 'SEE Lifestyle',
+    category: 'Hospitality / Lifestyle',
+    summary: 'A premium digital experience for SEE Lagos, a lifestyle and business lounge with dining, membership and reservations.',
+    url: 'https://seelifestyle.com.ng/',
+    image: 'seelifestyle-c',
+  },
+  {
+    name: 'The Catalyst',
+    category: 'Personal brand / Coaching',
+    summary: 'The platform for Dr Lanre Olusola’s coaching, programmes, courses, media and resources.',
+    url: 'https://thecatalystng.com/',
+    image: 'catalyst-c',
+  },
+  {
+    name: 'Obymart',
+    category: 'E-commerce / Retail',
+    summary: 'An online store for educational tablets, toys, fashion, baby essentials, home products and computing accessories.',
+    url: 'https://obymart.com/',
+    image: 'obymart-c',
+  },
+  {
+    name: 'DonLamba — Beatz Factory',
+    category: 'Music / E-commerce',
+    summary: 'A music platform with a beat catalogue, audio previews, custom production services and online booking.',
+    url: 'https://donlamba.com/',
+    image: 'donlamba-c',
+  },
+  {
+    name: 'Ifeanyi Odii Campaign',
+    category: 'Campaign / Digital communications',
+    summary: 'The central digital presence for a 2027 Ebonyi State governorship campaign: profile, vision and mobilisation.',
+    url: 'https://voteifeanyiodii.com.ng/',
+    image: 'odii-c',
+  },
+  {
+    name: 'Advent Management Solutions',
+    category: 'Consulting / Project management',
+    summary: 'A corporate website for a project management and consulting firm.',
+    url: 'https://adventmgtsolutions.com/',
+    image: 'advent-c',
+  },
+];

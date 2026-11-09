@@ -59,12 +59,23 @@ const archivo = localFont({
   preload: false,
 });
 
+// Classical serif accent, used sparingly (hero).
+const serif = localFont({
+  src: [
+    { path: '../../node_modules/@fontsource/instrument-serif/files/instrument-serif-latin-400-italic.woff2', weight: '400', style: 'italic' },
+    { path: '../../node_modules/@fontsource/instrument-serif/files/instrument-serif-latin-400-normal.woff2', weight: '400', style: 'normal' },
+  ],
+  variable: '--font-instrument',
+  display: 'swap',
+  fallback: ['Georgia', 'Times New Roman', 'serif'],
+});
+
 const GA = process.env.NEXT_PUBLIC_GA_ID;
 const PLAUSIBLE = process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-GB" className={`${host.variable} ${archivo.variable}`} suppressHydrationWarning>
+    <html lang="en-GB" className={`${host.variable} ${archivo.variable} ${serif.variable}`} suppressHydrationWarning>
       <head>
         {/* Hide reveal targets before first paint only when motion will run; fail open after 3.5s if JS never boots. */}
         <script

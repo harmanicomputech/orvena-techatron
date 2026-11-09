@@ -39,7 +39,7 @@ export function Disciplines() {
       <div className="container-x pt-[72px] max-[809px]:pt-14">
         <div className="flex justify-between gap-8 border-b border-white/10 pb-8">
           <p className="t-micro max-w-[220px]" data-reveal>
-            Digital engineering studio, Lagos
+            Lagos · Delaware · Serving globally
           </p>
           <p className="t-micro max-w-[220px] text-right" data-reveal>
             Good software starts with a clear understanding.

@@ -90,21 +90,6 @@ export function Star({ size = 32, color = 'currentColor', className = '' }: { si
   );
 }
 
-export function StarDisc({ size = 112, bg = 'var(--color-lilac)', starColor = 'var(--color-ink)', spin = true, className = '' }: {
-  size?: number;
-  bg?: string;
-  starColor?: string;
-  spin?: boolean;
-  className?: string;
-}) {
-  return (
-    <span className={`star-disc ${className}`} style={{ width: size, height: size, background: bg }} aria-hidden="true">
-      <span className={spin ? 'spin-slow' : ''}>
-        <Star size={size * 0.32} color={starColor} />
-      </span>
-    </span>
-  );
-}
 
 /* ───────── Responsive image from the optimised manifest (or a static SVG path) */
 type ManifestEntry = { width: number; height: number; widths: number[] };

@@ -1,4 +1,4 @@
-import { Button, StarDisc } from '@/components/ui';
+import { Button } from '@/components/ui';
 
 export const metadata = { title: 'Page not found' };
 
@@ -7,7 +7,6 @@ export default function NotFound() {
     <section className="relative">
       <div className="guides" aria-hidden="true" />
       <div className="container-x relative flex min-h-[70vh] flex-col items-center justify-center py-24 text-center">
-        <StarDisc size={96} />
         <p className="t-mega mt-8 !text-[min(220px,40vw)]" aria-hidden="true">
           404
         </p>

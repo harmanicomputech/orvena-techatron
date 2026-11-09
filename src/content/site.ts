@@ -5,7 +5,9 @@ export const site = {
   url: 'https://techatronagency.com',
   tagline: 'Digital engineering & technology consulting',
   description:
-    'Techatron Consulting Limited is a digital engineering and technology consulting company in Lagos. We design, engineer and launch software, web applications, mobile apps and intelligent platforms.',
+    'Techatron Consulting Limited is a digital engineering and technology consulting company with operations hubs in Lagos, Nigeria and Delaware, USA, serving clients globally. We design, engineer and launch software, web applications, mobile apps and intelligent platforms.',
+  locations: 'Lagos, Nigeria · Delaware, USA',
+  reach: 'Serving clients globally',
   email: 'hello@techatronagency.com',
   phones: [
     { label: '0902 201 6978', href: 'tel:+2349022016978' },
@@ -20,6 +22,11 @@ export const site = {
     mapUrl:
       'https://www.google.com/maps/search/?api=1&query=13%20Adepele%20Street%2C%20Ikeja%2C%20Lagos%2C%20Nigeria',
   },
+  // Operations hubs
+  hubs: [
+    { city: 'Lagos', country: 'Nigeria', detail: '13 Adepele Street, Ikeja', countryCode: 'NG', region: 'Lagos' },
+    { city: 'Delaware', country: 'United States', detail: 'US operations hub', countryCode: 'US', region: 'DE' },
+  ],
   social: [
     { label: 'LinkedIn', handle: 'Techatron Consulting', href: 'https://www.linkedin.com/company/techatron-consulting-limited/' },
     { label: 'Instagram', handle: '@techatronconsultingltd', href: 'https://www.instagram.com/techatronconsultingltd/' },

@@ -1,4 +1,24 @@
 {
+  "advent-c": {
+    "width": 2160,
+    "height": 1598,
+    "widths": [
+      480,
+      960,
+      1600,
+      2160
+    ]
+  },
+  "catalyst-c": {
+    "width": 2160,
+    "height": 1598,
+    "widths": [
+      480,
+      960,
+      1600,
+      2160
+    ]
+  },
   "command-1": {
     "width": 2400,
     "height": 1500,
@@ -73,6 +93,16 @@
     "widths": [
       480,
       780
+    ]
+  },
+  "donlamba-c": {
+    "width": 2160,
+    "height": 1598,
+    "widths": [
+      480,
+      960,
+      1600,
+      2160
     ]
   },
   "hostcomm-1": {
@@ -219,6 +249,36 @@
       780
     ]
   },
+  "nebostage-c": {
+    "width": 2160,
+    "height": 1598,
+    "widths": [
+      480,
+      960,
+      1600,
+      2160
+    ]
+  },
+  "obymart-c": {
+    "width": 2160,
+    "height": 1598,
+    "widths": [
+      480,
+      960,
+      1600,
+      2160
+    ]
+  },
+  "odii-c": {
+    "width": 2160,
+    "height": 1598,
+    "widths": [
+      480,
+      960,
+      1600,
+      2160
+    ]
+  },
   "powernest-1": {
     "width": 2400,
     "height": 1500,
@@ -315,6 +375,16 @@
       780
     ]
   },
+  "seelifestyle-c": {
+    "width": 2160,
+    "height": 1598,
+    "widths": [
+      480,
+      960,
+      1600,
+      2160
+    ]
+  },
   "triumph-1": {
     "width": 2400,
     "height": 1500,
@@ -361,6 +431,16 @@
     "widths": [
       480,
       780
+    ]
+  },
+  "zealot-c": {
+    "width": 2160,
+    "height": 1598,
+    "widths": [
+      480,
+      960,
+      1600,
+      2160
     ]
   }
 }

@@ -1,5 +1,5 @@
 import { PageHero } from '@/components/PageHero';
-import { Button, Eyebrow, Img, MarqueeBand, Star, StarDisc } from '@/components/ui';
+import { Button, Eyebrow, Img, MarqueeBand, Star } from '@/components/ui';
 import { ProcessCards } from '@/components/ProcessCards';
 import { CtaPanel } from '@/components/CtaPanel';
 import { services } from '@/content/services';
@@ -86,7 +86,6 @@ export default function ServicesPage() {
             <h2 id="disciplines" className="t-h2 max-w-[700px]" data-split>
               Eight disciplines, one accountable team.
             </h2>
-            <StarDisc size={104} className="max-[809px]:hidden" />
           </div>
           <div className="mt-14 grid gap-3 min-[810px]:grid-cols-2" data-reveal-group>
             {services.map((s, i) => {

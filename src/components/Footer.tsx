@@ -3,7 +3,8 @@
 import { useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
 import { Logo } from './Logo';
-import { Img, MarqueeBand, StarDisc } from './ui';
+import { WORDMARK_PATH } from '@/content/logo-path';
+import { Img, MarqueeBand } from './ui';
 import { TransitionLink } from './TransitionLink';
 import { disciplinesMarquee, navWithContact, site } from '@/content/site';
 import { gsap, ScrollTrigger, prefersReducedMotion } from '@/lib/gsap';
@@ -85,11 +86,21 @@ export function Footer() {
 
       <div className="container-x pt-[88px] max-[809px]:pt-16">
         <div className="grid gap-12 border-b border-white/10 pb-12 min-[810px]:grid-cols-[minmax(0,460px)_1fr] min-[810px]:gap-0">
-          <div className="flex items-start justify-between min-[810px]:block min-[810px]:border-r min-[810px]:border-white/10">
-            <TransitionLink href="/" aria-label="Techatron — home">
-              <Logo light />
+          <div className="min-[810px]:border-r min-[810px]:border-white/10 min-[810px]:pr-8">
+            <TransitionLink href="/" aria-label="Techatron — home" className="inline-block">
+              <Logo light height={30} />
             </TransitionLink>
-            <StarDisc size={112} className="max-[809px]:!h-[88px] max-[809px]:!w-[88px] min-[810px]:mt-10" />
+            <dl className="mt-10 grid grid-cols-2 gap-6 max-w-[360px]">
+              {site.hubs.map((h) => (
+                <div key={h.city}>
+                  <dt className="t-micro text-cream-56">Operations hub</dt>
+                  <dd className="mt-1.5 text-[19px] tracking-[-0.02em]">
+                    {h.city}
+                    <span className="block text-[15px] text-cream-56">{h.country}</span>
+                  </dd>
+                </div>
+              ))}
+            </dl>
           </div>
           <div className="min-[810px]:pl-8 xl:pl-0 xl:-ml-[0px]">
             <p className="t-h4 max-w-[640px]">
@@ -116,10 +127,12 @@ export function Footer() {
             <p className="text-cream-56 mt-1.5">
               Digital engineering and technology consulting. Software, web and mobile applications, AI and enterprise platforms.
             </p>
-            <address className="text-cream-56 mt-4 not-italic">
+            <address className="text-cream-56 mt-4 grid gap-1 not-italic">
               <a href={site.address.mapUrl} target="_blank" rel="noopener noreferrer" className="hover:text-cream">
-                {site.address.street}, {site.address.locality}, {site.address.region}, {site.address.country}
+                Lagos, Nigeria — {site.address.street}, {site.address.locality}
               </a>
+              <span>Delaware, United States</span>
+              <span className="text-cream-86">{site.reach}</span>
             </address>
           </div>
           <nav aria-label="Footer">
@@ -161,17 +174,8 @@ export function Footer() {
         </div>
 
         <div ref={stage} className="relative select-none" aria-hidden="true">
-          <svg viewBox="0 0 1312 232" className="block w-full" style={{ marginTop: 'clamp(40px, 8vw, 120px)' }}>
-            <text
-              x="0"
-              y="232"
-              textLength="1312"
-              lengthAdjust="spacingAndGlyphs"
-              fill="var(--color-cream)"
-              style={{ fontFamily: 'var(--font-archivo), sans-serif', fontWeight: 900, fontSize: 262, letterSpacing: '-0.04em' }}
-            >
-              TECHATRON
-            </text>
+          <svg viewBox="40 170 3095 342" className="block w-full" style={{ marginTop: 'clamp(40px, 8vw, 120px)' }}>
+            <path fill="var(--color-cream)" d={WORDMARK_PATH} />
           </svg>
           {pills.map((p) => (
             <span key={p.label} className="pill footer-pill" style={{ background: p.bg, color: 'var(--color-ink)', fontSize: 'clamp(12px, 1.3vw, 17px)' }}>

@@ -8,7 +8,7 @@ import { JsonLd, breadcrumbLd, pageMeta } from '@/lib/seo';
 
 export const metadata = pageMeta({
   title: 'Contact',
-  description: `Start a project with Techatron. Email ${site.email}, call 0902 201 6978, or visit 13 Adepele Street, Ikeja, Lagos.`,
+  description: `Start a project with Techatron. Email ${site.email}, call 0902 201 6978, or reach our operations hubs in Lagos, Nigeria and Delaware, USA.`,
   path: '/contact/',
 });
 
@@ -16,7 +16,7 @@ export default function ContactPage() {
   const rows = [
     { k: 'Email', v: site.email, href: `mailto:${site.email}` },
     { k: 'Call', v: site.phones.map((p) => p.label).join('  ·  '), href: site.phones[0].href },
-    { k: 'Visit', v: `${site.address.street}, ${site.address.locality}, ${site.address.region}`, href: site.address.mapUrl },
+    { k: 'Lagos, Nigeria', v: `${site.address.street}, ${site.address.locality}, Lagos`, href: site.address.mapUrl },
   ];
   return (
     <>
@@ -47,12 +47,16 @@ export default function ContactPage() {
                 <div key={r.k} className="border-t border-white/10 py-4">
                   <dt className="t-micro text-cream-56">{r.k}</dt>
                   <dd className="mt-1.5">
-                    <a href={r.href} className="hover:text-yellow" {...(r.k === 'Visit' ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>
+                    <a href={r.href} className="hover:text-yellow" {...(r.k.startsWith('Lagos') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>
                       {r.v}
                     </a>
                   </dd>
                 </div>
               ))}
+              <div className="border-t border-white/10 py-4">
+                <dt className="t-micro text-cream-56">Delaware, USA</dt>
+                <dd className="mt-1.5">US operations hub · {site.reach}</dd>
+              </div>
               <div className="border-t border-white/10 py-4">
                 <dt className="t-micro text-cream-56">Social</dt>
                 <dd className="mt-1.5 flex flex-wrap gap-x-4 gap-y-1">
@@ -75,7 +79,7 @@ export default function ContactPage() {
           <div className="relative rounded-[28px] bg-white p-8 max-[809px]:p-5" data-reveal data-delay="0.1">
             <div className="mb-8 flex items-start justify-between">
               <h2 className="t-h4">Project inquiry</h2>
-              <Star size={30} color="var(--color-orange)" className="spin-slow" />
+              <Star size={30} color="var(--color-orange)" />
             </div>
             <ContactForm />
           </div>
