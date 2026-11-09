@@ -99,16 +99,18 @@ export function Hero() {
 
       <div className="hero-show container-x relative mt-20 max-[809px]:mt-12" aria-hidden="true">
         <div className="hero-show__stage">
+          <span className="hero-show__label hero-show__label--l">Nebo Stage</span>
+          <span className="hero-show__label hero-show__label--r">Resolvr</span>
           <div className="hero-show__phone hero-show__phone--l">
-            <Img src="powernest-m" alt="" sizes="(max-width: 809px) 28vw, 240px" priority className="h-full w-full object-cover object-top" />
+            <Img src="nebostage-m" alt="" sizes="(max-width: 809px) 28vw, 230px" priority className="h-full w-full object-cover object-top" />
           </div>
           <div className="hero-show__main">
             <div className="hero-show__screen">
-              <Img src="photo-team" alt="" sizes="(max-width: 1199px) 90vw, 980px" priority className="h-full w-full object-cover object-center" />
+              <Img src="photo-multitask" alt="" sizes="(max-width: 1199px) 90vw, 940px" priority className="h-full w-full object-cover object-center" />
             </div>
           </div>
           <div className="hero-show__phone hero-show__phone--r">
-            <Img src="hostcomm-m" alt="" sizes="(max-width: 809px) 28vw, 240px" priority className="h-full w-full object-cover object-top" />
+            <Img src="resolvr-m" alt="" sizes="(max-width: 809px) 28vw, 230px" priority className="h-full w-full object-cover object-top" />
           </div>
         </div>
       </div>

@@ -1088,100 +1088,95 @@ button {
   padding-right: 0.04em;
 }
 .hero-show {
-  height: clamp(280px, 44vw, 640px);
-  overflow: hidden;
+  padding-bottom: 140px;
 }
 .hero-show__stage {
   position: relative;
   max-width: 1200px;
-  height: 100%;
   margin: 0 auto;
 }
+/* Framed photograph, fully visible, centred */
 .hero-show__main {
-  position: absolute;
-  left: 50%;
-  top: 0;
-  width: min(960px, 80%);
-  transform: translateX(-50%);
-  border-radius: 22px 22px 0 0;
-  background: var(--color-night-card);
-  padding: 0 10px;
-  box-shadow: 0 60px 120px -60px rgba(17, 18, 24, 0.55);
-}
-.hero-show__bar {
-  height: 40px;
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  padding: 0 8px;
-}
-.hero-show__bar i {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: rgba(244, 241, 234, 0.22);
-}
-.hero-show__bar span {
+  position: relative;
+  width: min(920px, 76%);
   margin: 0 auto;
-  padding: 4px 14px;
-  border-radius: 100px;
-  background: rgba(244, 241, 234, 0.08);
-  color: var(--cream-56);
-  font-size: 12px;
-  transform: translateX(-20px);
+  border-radius: 30px;
+  background: var(--color-night-card);
+  padding: 10px;
+  box-shadow: 0 60px 120px -60px rgba(17, 18, 24, 0.55);
 }
 .hero-show__screen {
   position: relative;
   aspect-ratio: 16 / 10;
   overflow: hidden;
-  border-radius: 12px 12px 0 0;
-  background: #fff;
+  border-radius: 22px;
+  background: var(--color-night-raised);
 }
+/* Phones sit at the lower corners, overlapping only the frame's edge */
 .hero-show__phone {
   position: absolute;
   z-index: 2;
-  top: 18%;
-  width: clamp(110px, 20vw, 240px);
-  aspect-ratio: 390 / 820;
+  bottom: -96px;
+  width: clamp(112px, 16vw, 224px);
+  aspect-ratio: 390 / 844;
   border-radius: 34px;
   background: var(--color-night-card);
-  padding: 8px;
+  padding: 7px;
   box-shadow: 0 50px 90px -40px rgba(17, 18, 24, 0.6);
   overflow: hidden;
 }
 .hero-show__phone img {
-  border-radius: 27px;
+  border-radius: 28px;
 }
 .hero-show__phone--l {
-  left: 0;
+  left: 2%;
+  rotate: -4deg;
 }
 .hero-show__phone--r {
-  right: 0;
+  right: 2%;
+  rotate: 4deg;
+}
+.hero-show__label {
+  position: absolute;
+  bottom: -132px;
+  z-index: 3;
+  width: clamp(112px, 16vw, 224px);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-grey);
+}
+.hero-show__label--l {
+  left: 2%;
+}
+.hero-show__label--r {
+  right: 2%;
 }
 @media (max-width: 809.98px) {
+  .hero-show {
+    padding-bottom: 76px;
+  }
   .hero-show__main {
-    width: 88%;
-    border-radius: 14px 14px 0 0;
-    padding: 0 6px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 6px;
   }
-  .hero-show__bar {
-    height: 26px;
-    gap: 5px;
-  }
-  .hero-show__bar i {
-    width: 7px;
-    height: 7px;
-  }
-  .hero-show__bar span {
-    display: none;
+  .hero-show__screen {
+    border-radius: 15px;
   }
   .hero-show__phone {
-    top: 30%;
-    border-radius: 20px;
-    padding: 5px;
+    width: 21vw;
+    bottom: -56px;
+    border-radius: 18px;
+    padding: 4px;
   }
   .hero-show__phone img {
-    border-radius: 16px;
+    border-radius: 14px;
+  }
+  .hero-show__label {
+    display: none;
   }
 }
 @media (prefers-reduced-motion: reduce) {
