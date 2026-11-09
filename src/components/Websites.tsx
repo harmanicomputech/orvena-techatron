@@ -1,6 +1,6 @@
 import { TransitionLink } from './TransitionLink';
 import { Img } from './ui';
-import { websiteGroups, websites, type Website } from '@/content/projects';
+import { websites, type Website } from '@/content/projects';
 
 const domain = (url: string) => url.replace(/^https?:\/\//, '').replace(/^www\./, '').replace(/\/$/, '');
 
@@ -57,7 +57,7 @@ function WebsiteCard({ w }: { w: Website }) {
   );
 }
 
-/** Every client website, grouped as in Techatron's portfolio notes. */
+/** Every client website from Techatron's portfolio notes. */
 export function Websites() {
   return (
     <section className="container-x pb-[120px] pt-10 max-[809px]:pb-20" aria-labelledby="websites">
@@ -66,30 +66,19 @@ export function Websites() {
       </span>
       <div className="mt-5 flex flex-wrap items-end justify-between gap-6">
         <h2 id="websites" className="t-h4 max-w-[640px]" data-split>
-          {websites.length} websites, designed and built for organisations across industries.
+          Websites, designed and built for organisations across industries.
         </h2>
         <p className="max-w-[420px] text-slate" data-reveal>
           Corporate platforms, commerce, events, real estate, creative studios and personal brands, each live and in use.
         </p>
       </div>
-      {websiteGroups.map((g) => {
-        const items = websites.filter((w) => w.group === g);
-        return (
-          <div key={g} className="mt-16 max-[809px]:mt-12">
-            <h3 className="t-micro flex items-center gap-3 border-b border-[rgba(17,18,24,.1)] pb-3 text-grey">
-              {g}
-              <span className="text-ink">{String(items.length).padStart(2, '0')}</span>
-            </h3>
-            <ul className="mt-8 grid gap-x-5 gap-y-10 min-[810px]:grid-cols-2 xl:grid-cols-4" data-reveal-group>
-              {items.map((w) => (
-                <li key={w.url}>
-                  <WebsiteCard w={w} />
-                </li>
-              ))}
-            </ul>
-          </div>
-        );
-      })}
+      <ul className="mt-12 grid gap-x-5 gap-y-10 min-[810px]:grid-cols-2 xl:grid-cols-4" data-reveal-group>
+        {websites.map((w) => (
+          <li key={w.url}>
+            <WebsiteCard w={w} />
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }
