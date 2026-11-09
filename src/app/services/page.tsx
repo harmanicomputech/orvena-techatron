@@ -47,6 +47,16 @@ export default function ServicesPage() {
         </Button>
       </PageHero>
 
+      <section className="container-x pb-[120px] max-[809px]:pb-16" aria-label="How we work">
+        <div className="grid grid-cols-3 gap-4 max-[809px]:grid-cols-2 max-[809px]:gap-2.5" data-reveal-group>
+          {['photo-evening', 'photo-learning', 'photo-planning'].map((k, i) => (
+            <div key={k} className={`media media--light aspect-[4/3] rounded-[20px] ${i === 1 ? 'translate-y-6 max-[809px]:translate-y-0' : ''} ${i === 2 ? 'max-[809px]:hidden' : ''}`}>
+              <Img src={k} alt="" sizes="(max-width: 809px) 50vw, 33vw" className="object-center" />
+            </div>
+          ))}
+        </div>
+      </section>
+
       <section className="container-x pb-[140px] max-[809px]:pb-20" aria-labelledby="ways">
         <Eyebrow>Engagement types</Eyebrow>
         <h2 id="ways" className="t-h4 mt-5" data-split>

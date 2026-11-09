@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { articles, getArticle } from '@/content/articles';
-import { ArticleCard, ArticleCover } from '@/components/ArticleCard';
+import { ArticleCard, ArticlePhoto } from '@/components/ArticleCard';
 import { Button, Eyebrow, Star } from '@/components/ui';
 import { JsonLd, articleLd, breadcrumbLd, pageMeta } from '@/lib/seo';
 
@@ -52,8 +52,8 @@ export default async function ArticlePage({ params }: Params) {
           <div className="container-x relative mt-14">
             <div className="relative mx-auto max-w-[1100px]">
               <div className="absolute inset-[3%_-1%_-3%_1%] -rotate-[2deg] rounded-[30px] bg-yellow" aria-hidden="true" />
-              <div className="relative overflow-hidden rounded-[30px] rotate-[1deg] [&>svg]:aspect-[16/8] [&>svg]:h-auto [&>svg]:w-full" data-clip>
-                <ArticleCover article={a} />
+              <div className="relative aspect-[16/8] overflow-hidden rounded-[30px] rotate-[1deg]" data-clip>
+                <ArticlePhoto article={a} sizes="(max-width: 1199px) 100vw, 1100px" priority />
               </div>
             </div>
           </div>

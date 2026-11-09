@@ -9,6 +9,26 @@
       2160
     ]
   },
+  "ayorinde-c": {
+    "width": 2160,
+    "height": 1598,
+    "widths": [
+      480,
+      960,
+      1600,
+      2160
+    ]
+  },
+  "brickhomes-c": {
+    "width": 2160,
+    "height": 1598,
+    "widths": [
+      480,
+      960,
+      1600,
+      2160
+    ]
+  },
   "catalyst-c": {
     "width": 2160,
     "height": 1598,
@@ -279,6 +299,203 @@
       2160
     ]
   },
+  "photo-analyst": {
+    "width": 2400,
+    "height": 1600,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "photo-coworkers": {
+    "width": 2400,
+    "height": 1600,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "photo-coworking": {
+    "width": 2400,
+    "height": 1600,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "photo-creator": {
+    "width": 2400,
+    "height": 1600,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "photo-designers": {
+    "width": 1602,
+    "height": 2400,
+    "widths": [
+      480,
+      960,
+      1600,
+      1602
+    ]
+  },
+  "photo-evening": {
+    "width": 2400,
+    "height": 1600,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "photo-graphic": {
+    "width": 1600,
+    "height": 2400,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "photo-late": {
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "photo-learning": {
+    "width": 2400,
+    "height": 1600,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "photo-manager": {
+    "width": 1600,
+    "height": 2400,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "photo-meeting": {
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "photo-multitask": {
+    "width": 2400,
+    "height": 1600,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "photo-notes": {
+    "width": 2400,
+    "height": 1266,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "photo-planning": {
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "photo-retail": {
+    "width": 1600,
+    "height": 2400,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "photo-review": {
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "photo-studio": {
+    "width": 2400,
+    "height": 1602,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "photo-tablet": {
+    "width": 2400,
+    "height": 1600,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "photo-team": {
+    "width": 2400,
+    "height": 1600,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
+  "photo-video-call": {
+    "width": 2400,
+    "height": 1600,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ]
+  },
   "powernest-1": {
     "width": 2400,
     "height": 1500,
@@ -433,7 +650,27 @@
       780
     ]
   },
+  "wardrobe-c": {
+    "width": 2160,
+    "height": 1598,
+    "widths": [
+      480,
+      960,
+      1600,
+      2160
+    ]
+  },
   "zealot-c": {
+    "width": 2160,
+    "height": 1598,
+    "widths": [
+      480,
+      960,
+      1600,
+      2160
+    ]
+  },
+  "zealothaulage-c": {
     "width": 2160,
     "height": 1598,
     "widths": [

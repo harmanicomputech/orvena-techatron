@@ -111,9 +111,9 @@ export function Footer() {
                 {site.email}
               </a>
               <span className="flex -space-x-3" aria-hidden="true">
-                {['kwoat-m', 'powernest-m', 'hostcomm-m'].map((k) => (
+                {['photo-notes', 'photo-creator', 'photo-review'].map((k) => (
                   <span key={k} className="block h-[46px] w-[46px] overflow-hidden rounded-full ring-2 ring-[var(--color-night)]">
-                    <Img src={k} alt="" sizes="46px" className="h-full w-full object-cover object-top" />
+                    <Img src={k} alt="" sizes="46px" className="h-full w-full object-cover" />
                   </span>
                 ))}
               </span>

@@ -1,5 +1,5 @@
 import { PageHero } from '@/components/PageHero';
-import { ArticleCover } from '@/components/ArticleCard';
+import { ArticlePhoto } from '@/components/ArticleCard';
 import { TransitionLink } from '@/components/TransitionLink';
 import { CtaPanel } from '@/components/CtaPanel';
 import { InsightsGrid } from './InsightsGrid';
@@ -27,7 +27,7 @@ export default function InsightsPage() {
       <section className="container-x pb-20" aria-label="Featured article">
         <TransitionLink href={`/insights/${featured.slug}/`} className="article-card grid items-center gap-8 min-[1200px]:grid-cols-[1.1fr_1fr] !p-2.5" data-cursor-label="Read" data-reveal>
           <span className="article-card__media block !aspect-[16/10]">
-            <ArticleCover article={featured} />
+            <ArticlePhoto article={featured} sizes="(max-width: 1199px) 100vw, 55vw" priority />
             <span className="pill pill--cream absolute left-3.5 top-3.5 !text-[15px]">{featured.category}</span>
           </span>
           <span className="block p-6 max-[809px]:p-3">

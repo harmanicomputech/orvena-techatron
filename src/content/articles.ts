@@ -12,12 +12,14 @@ export type Article = {
   readMinutes: number;
   published: string; // ISO date
   cover: 'dots' | 'bars' | 'rings' | 'grid' | 'stack' | 'wave';
+  photo: string; // image-manifest key for the cover photograph
   body: Block[];
 };
 
 export const articles: Article[] = [
   {
     slug: 'clarity-beats-complexity',
+    photo: 'photo-planning',
     title: 'Clarity Beats Complexity',
     excerpt: 'Why the simplest system that reliably meets the need is almost always the right one.',
     category: 'Engineering',
@@ -38,6 +40,7 @@ export const articles: Article[] = [
   },
   {
     slug: 'honesty-saves-money',
+    photo: 'photo-manager',
     title: 'Honesty Saves Money',
     excerpt: 'Saying early when something is risky, unnecessary or better bought than built.',
     category: 'Consulting',
@@ -57,6 +60,7 @@ export const articles: Article[] = [
   },
   {
     slug: 'launch-is-the-beginning',
+    photo: 'photo-video-call',
     title: 'Launch Is the Beginning',
     excerpt: 'Software creates value in use, so we plan for operating and improving it from day one.',
     category: 'Product',
@@ -77,6 +81,7 @@ export const articles: Article[] = [
   },
   {
     slug: 'designing-for-the-phones-your-users-have',
+    photo: 'photo-multitask',
     title: 'Designing for the Phones Your Users Actually Have',
     excerpt: 'Performance budgets, mid-range devices and the networks your customers are really on.',
     category: 'Engineering',
@@ -97,6 +102,7 @@ export const articles: Article[] = [
   },
   {
     slug: 'build-or-buy',
+    photo: 'photo-analyst',
     title: 'Build or Buy? A Practical Way to Decide',
     excerpt: 'A short set of questions that makes the most expensive technology decision easier.',
     category: 'Consulting',
@@ -118,6 +124,7 @@ export const articles: Article[] = [
   },
   {
     slug: 'quality-is-a-habit',
+    photo: 'photo-evening',
     title: 'Quality Is a Habit, Not a Phase',
     excerpt: 'Reviews, tests and documentation belong in every change, not in a phase at the end.',
     category: 'Engineering',

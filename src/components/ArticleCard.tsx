@@ -1,4 +1,6 @@
+import type { ReactNode } from 'react';
 import { TransitionLink } from './TransitionLink';
+import { Img } from './ui';
 import type { Article } from '@/content/articles';
 
 const palette = {
@@ -12,7 +14,7 @@ export function ArticleCover({ article }: { article: Article }) {
   const c = palette[article.category];
   const W = 400;
   const H = 270;
-  const shapes: React.ReactNode[] = [];
+  const shapes: ReactNode[] = [];
   switch (article.cover) {
     case 'dots':
       for (let r = 0; r < 3; r++)
@@ -50,11 +52,17 @@ export function ArticleCover({ article }: { article: Article }) {
   );
 }
 
+/** Cover photograph for an article (falls back to generated art if none is set). */
+export function ArticlePhoto({ article, sizes = '(max-width: 809px) 100vw, 33vw', priority = false }: { article: Article; sizes?: string; priority?: boolean }) {
+  if (!article.photo) return <ArticleCover article={article} />;
+  return <Img src={article.photo} alt="" sizes={sizes} priority={priority} className="article-card__img h-full w-full object-cover" />;
+}
+
 export function ArticleCard({ article }: { article: Article }) {
   return (
     <TransitionLink href={`/insights/${article.slug}/`} className="article-card" data-cursor-label="Read">
       <span className="article-card__media block">
-        <ArticleCover article={article} />
+        <ArticlePhoto article={article} />
         <span className="pill pill--cream absolute left-3.5 top-3.5 !text-[15px]">{article.category}</span>
       </span>
       <span className="block px-3.5 pt-5">

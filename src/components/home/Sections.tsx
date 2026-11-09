@@ -176,9 +176,9 @@ function Conviction() {
       <div className="relative mx-auto w-full max-w-[395px]" data-reveal>
         <div className="absolute inset-[22px_0_0_28px] rotate-[3deg] rounded-[26px] bg-lilac" aria-hidden="true" />
         <div className="media relative aspect-[395/463] -rotate-[3deg] overflow-hidden rounded-[26px]" data-parallax="0.04">
-          <Img src="kwoat-m" alt="Kwoat AI on mobile" sizes="395px" />
+          <Img src="photo-designers" alt="Designers working together on a 3D model" sizes="395px" />
         </div>
-        <span className="pill pill--yellow absolute -left-2 bottom-12 -rotate-[6deg]">Kwoat AI</span>
+        <span className="pill pill--yellow absolute -left-2 bottom-12 -rotate-[6deg]">Engineering-led</span>
       </div>
       <div>
         <span data-reveal className="block w-fit">

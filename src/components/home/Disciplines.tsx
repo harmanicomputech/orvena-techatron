@@ -94,7 +94,7 @@ export function Disciplines() {
               <span className="absolute left-5 top-5 z-[2]" aria-hidden="true">
                 <LogoMark size={30} light />
               </span>
-              <Img src="hostcomm-2" alt="HostComm Summit website — editorial storytelling" sizes="(max-width: 1199px) 100vw, 604px" />
+              <Img src="photo-coworkers" alt="Colleagues reviewing project data on a tablet" sizes="(max-width: 1199px) 100vw, 604px" />
             </div>
             <p className="t-micro mt-4">Designed for reliability, security and performance</p>
           </div>

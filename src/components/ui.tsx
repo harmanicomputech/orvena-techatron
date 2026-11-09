@@ -174,7 +174,7 @@ export function Eyebrow({ children, variant = '', className = '' }: { children: 
 }
 
 /* ───────── Cluster of round project thumbnails + label (replaces stock-portrait clusters) */
-const CLUSTER = ['hostcomm-m', 'triumph-m', 'powernest-m', 'keybridge-m'];
+const CLUSTER = ['photo-coworking', 'photo-notes', 'photo-creator', 'photo-review'];
 
 export function ThumbCluster({ label, images = CLUSTER, dark = true }: { label: string; images?: string[]; dark?: boolean }) {
   const spots = [

@@ -365,65 +365,96 @@ export const workFilters = [
   { id: 'corporate', label: 'Corporate' },
 ] as const;
 
-// More work: corporate, commerce and creative websites. Descriptions from Techatron's portfolio
-// notes (Drive: Portfolio/Websites, Nov 2026); screenshots captured from each live site on 9 Nov 2026.
-export type MoreWork = { name: string; category: string; summary: string; url: string; image: string };
+// Client websites: all 24 sites from Techatron's portfolio notes (Drive: Portfolio/Websites, Nov 2026),
+// grouped as in that document. Screenshots were captured from each live site on 9 Nov 2026. Sites that
+// could not be captured (offline, expired domain, bot protection) show a branded card instead.
+export type Website = {
+  name: string;
+  category: string;
+  summary: string;
+  url: string;
+  group: (typeof websiteGroups)[number];
+  image?: string; // screenshot key
+  logo?: string; // /images/clients/*.webp
+  caseStudy?: string; // slug of a full case study
+};
 
-export const moreWork: MoreWork[] = [
-  {
-    name: 'Zealot Chemicals',
-    category: 'Manufacturing / Construction materials',
-    summary: 'A corporate and product website for a manufacturer of Plaster of Paris (POP) cement, with product discovery and enquiries.',
-    url: 'https://zealotchemicals.com/',
-    image: 'zealot-c',
-  },
-  {
-    name: 'Nebo Stage',
-    category: 'Event production',
-    summary: 'A nationwide event production company: staging, rigging, lighting, LED screens, audio, media and livestreaming.',
-    url: 'https://nebostage.com.ng/',
-    image: 'nebostage-c',
-  },
-  {
-    name: 'SEE Lifestyle',
-    category: 'Hospitality / Lifestyle',
-    summary: 'A premium digital experience for SEE Lagos, a lifestyle and business lounge with dining, membership and reservations.',
-    url: 'https://seelifestyle.com.ng/',
-    image: 'seelifestyle-c',
-  },
-  {
-    name: 'The Catalyst',
-    category: 'Personal brand / Coaching',
-    summary: 'The platform for Dr Lanre Olusola’s coaching, programmes, courses, media and resources.',
-    url: 'https://thecatalystng.com/',
-    image: 'catalyst-c',
-  },
-  {
-    name: 'Obymart',
-    category: 'E-commerce / Retail',
-    summary: 'An online store for educational tablets, toys, fashion, baby essentials, home products and computing accessories.',
-    url: 'https://obymart.com/',
-    image: 'obymart-c',
-  },
-  {
-    name: 'DonLamba — Beatz Factory',
-    category: 'Music / E-commerce',
-    summary: 'A music platform with a beat catalogue, audio previews, custom production services and online booking.',
-    url: 'https://donlamba.com/',
-    image: 'donlamba-c',
-  },
-  {
-    name: 'Ifeanyi Odii Campaign',
-    category: 'Campaign / Digital communications',
-    summary: 'The central digital presence for a 2027 Ebonyi State governorship campaign: profile, vision and mobilisation.',
-    url: 'https://voteifeanyiodii.com.ng/',
-    image: 'odii-c',
-  },
-  {
-    name: 'Advent Management Solutions',
-    category: 'Consulting / Project management',
-    summary: 'A corporate website for a project management and consulting firm.',
-    url: 'https://adventmgtsolutions.com/',
-    image: 'advent-c',
-  },
+export const websiteGroups = [
+  'Technology, software and digital platforms',
+  'Corporate, industrial and enterprise',
+  'Real estate and property',
+  'Creative, lifestyle and e-commerce',
+  'Personal brands, professional services, faith and campaigns',
+] as const;
+
+const [TECH, CORP, PROP, CREATIVE, PERSONAL] = websiteGroups;
+
+export const websites: Website[] = [
+  { name: 'Comono Technologies', category: 'Technology / Identity verification', group: TECH, url: 'https://comono.io/', image: 'comono-c', logo: '/images/clients/comono.webp', caseStudy: 'comono',
+    summary: 'An integrated identity and address verification platform: identity checks, physical and digital address verification, proof of address and project verification.' },
+  { name: 'HostComm™ Host Community Summit', category: 'Events / Energy / Digital experience', group: TECH, url: 'https://hostcommsummit.com/', image: 'hostcomm-c', logo: '/images/clients/hostcomm-summit.webp', caseStudy: 'hostcomm-summit',
+    summary: 'The digital platform for Nigeria’s Host Community Summit, connecting the oil and gas industry, host communities, government and development institutions.' },
+  { name: 'The eBook Club', category: 'Education / Digital publishing', group: TECH, url: 'http://theebookclub.org/',
+    summary: 'A digital reading and subscription experience with an extensive e-book collection, personal libraries and reading across devices.' },
+  { name: 'Triumph Power & Gas Systems', category: 'Energy / Oil & gas / Engineering', group: CORP, url: 'https://triumphpg.com/', image: 'triumph-c', caseStudy: 'triumph-power-and-gas',
+    summary: 'A corporate experience for an indigenous integrated energy services company across oil and gas, power generation and marine operations.' },
+  { name: 'Zealot Chemicals', category: 'Manufacturing / Construction materials', group: CORP, url: 'https://zealotchemicals.com/', image: 'zealot-c', logo: '/images/clients/zealot.webp',
+    summary: 'A corporate and product website for a manufacturer of Plaster of Paris (POP) cement, with product discovery and enquiries.' },
+  { name: 'Doowe Gas', category: 'Energy / LPG / Industrial services', group: CORP, url: 'https://www.doowe.ng/', logo: '/images/clients/doowe.webp',
+    summary: 'An integrated LPG business: gas distribution, transportation, retail, plant construction, installation, reticulation and autogas conversion.' },
+  { name: 'Goldbrooks', category: 'Logistics / Supply chain management', group: CORP, url: 'https://goldbrooks.com/',
+    summary: 'A corporate website for an international supply chain management group: logistics, strategic sourcing and tailored business solutions.' },
+  { name: 'Cordiant Resources', category: 'Finance / Business support / Consultancy', group: CORP, url: 'http://cordiantresources.com.ng/', logo: '/images/clients/cordiant.webp',
+    summary: 'A corporate web presence for Cordiant Resources Ltd, a finance, business support and consultancy firm.' },
+  { name: 'Advent Management Solutions', category: 'Consulting / Project management', group: CORP, url: 'https://adventmgtsolutions.com/', image: 'advent-c', logo: '/images/clients/advent.webp',
+    summary: 'A corporate website for a project management and consulting firm.' },
+  { name: 'Zealot Haulage', category: 'Logistics / Transportation', group: CORP, url: 'https://zealothaulage.com/', image: 'zealothaulage-c',
+    summary: 'A corporate website for a haulage and logistics business, with its services, track-and-trace and quote requests.' },
+  { name: 'Brick Homes', category: 'Real estate / Property', group: PROP, url: 'https://brickhomesng.com/', image: 'brickhomes-c', logo: '/images/clients/brick-homes.webp',
+    summary: 'A corporate website for Brick Homes Integrated Limited, an estate development company, presenting its properties, services and projects.' },
+  { name: 'Keybridge Realty', category: 'Real estate / PropTech', group: PROP, url: 'https://keybridgerealty.com.ng/', image: 'keybridge-c', caseStudy: 'keybridge-realty',
+    summary: 'A real estate platform connecting buyers directly with verified property owners, built around transparency, verification and due diligence.' },
+  { name: 'Nebo Concept', category: 'Creative / Photography / Videography', group: CREATIVE, url: 'https://neboconcept.com/',
+    summary: 'A creative studio website for photography and videography: portfolio, production capabilities and bookings for weddings, events and brands.' },
+  { name: 'Nebo Stage', category: 'Event production', group: CREATIVE, url: 'https://nebostage.com.ng/', image: 'nebostage-c',
+    summary: 'A nationwide event production company: staging, rigging, barricades, lighting, LED displays, audio, media and livestreaming.' },
+  { name: 'DonLamba — Beatz Factory', category: 'Music / E-commerce', group: CREATIVE, url: 'https://donlamba.com/', image: 'donlamba-c', logo: '/images/clients/don-lamba.webp',
+    summary: 'A music platform with a beat catalogue, audio previews, custom production services and online booking.' },
+  { name: 'SEE Lifestyle', category: 'Hospitality / Lifestyle / Dining', group: CREATIVE, url: 'https://seelifestyle.com.ng/', image: 'seelifestyle-c', logo: '/images/clients/see.webp',
+    summary: 'A premium digital experience for SEE Lagos, a lifestyle and business lounge with dining, membership and table reservations.' },
+  { name: 'Obymart', category: 'E-commerce / Retail', group: CREATIVE, url: 'https://obymart.com/', image: 'obymart-c',
+    summary: 'An online store for educational tablets, toys, fashion, baby essentials, home products and computing accessories.' },
+  { name: 'The Wardrobe Manager', category: 'Fashion / Luxury / Bridal styling', group: CREATIVE, url: 'https://thewardrobemanager.com/', image: 'wardrobe-c', logo: '/images/clients/wardrobe-manager.webp',
+    summary: 'A luxury fashion and bridal styling presence: bridal wardrobe planning, destination weddings and styling coordination.' },
+  { name: 'The Catalyst — Dr Lanre Olusola', category: 'Personal brand / Coaching / Education', group: PERSONAL, url: 'https://thecatalystng.com/', image: 'catalyst-c', logo: '/images/clients/the-catalyst.webp',
+    summary: 'The platform for Dr Lanre Olusola’s executive coaching, programmes, courses, media appearances and resources.' },
+  { name: 'House on the Rock Dublin', category: 'Faith / Church / Community', group: PERSONAL, url: 'https://houseontherockdublin.org/',
+    summary: 'An online point of connection for a church community in Dublin, communicating its identity, activities and ways to get involved.' },
+  { name: 'Ayorinde Thomas & Co.', category: 'Professional services / Accounting', group: PERSONAL, url: 'https://ayorindethomasandco.com/', image: 'ayorinde-c',
+    summary: 'A corporate website for a firm of chartered accountants: audit and assurance, accounting, tax and financial advisory.' },
+  { name: 'Ifeanyi Odii — Campaign Website', category: 'Campaign / Digital communications', group: PERSONAL, url: 'https://voteifeanyiodii.com.ng/', image: 'odii-c',
+    summary: 'The central digital presence for a 2027 Ebonyi State governorship campaign: profile, vision, messaging and mobilisation.' },
+  { name: 'Dr. Festus Fadeyi', category: 'Executive personal brand', group: PERSONAL, url: 'https://drffat85.com/',
+    summary: 'A premium executive profile for a prominent oil and gas leader.' },
+  { name: 'Acesolvit', category: 'Corporate', group: PERSONAL, url: 'http://acesolvit.com/', logo: '/images/clients/acesolvit.webp',
+    summary: 'A corporate web presence for Acesolvit.' },
+];
+
+// Client logos (from techatronagency.com).
+export const clientLogos = [
+  { name: 'HostComm Summit', src: '/images/clients/hostcomm-summit.webp' },
+  { name: 'Caritas', src: '/images/clients/caritas.webp' },
+  { name: 'Comono', src: '/images/clients/comono.webp' },
+  { name: 'Brick Homes', src: '/images/clients/brick-homes.webp' },
+  { name: 'Zealot Chemicals', src: '/images/clients/zealot.webp' },
+  { name: 'Powernest', src: '/images/clients/powernest.webp' },
+  { name: 'The Catalyst', src: '/images/clients/the-catalyst.webp' },
+  { name: 'Doowe', src: '/images/clients/doowe.webp' },
+  { name: 'Advent Management Solutions', src: '/images/clients/advent.webp' },
+  { name: 'Cordiant Resources', src: '/images/clients/cordiant.webp' },
+  { name: 'SEE Lifestyle', src: '/images/clients/see.webp' },
+  { name: 'The Wardrobe Manager', src: '/images/clients/wardrobe-manager.webp' },
+  { name: 'Acesolvit', src: '/images/clients/acesolvit.webp' },
+  { name: 'C.S.E Phones NG', src: '/images/clients/cse-phones.webp' },
+  { name: 'Don Lamba', src: '/images/clients/don-lamba.webp' },
 ];

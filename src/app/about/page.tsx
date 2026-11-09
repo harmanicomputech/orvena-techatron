@@ -3,6 +3,7 @@ import { Button, Eyebrow, Img, MarqueeBand, Star } from '@/components/ui';
 import { ServiceCard } from '@/components/home/Sections';
 import { ProcessCards } from '@/components/ProcessCards';
 import { CtaPanel } from '@/components/CtaPanel';
+import { ClientLogos } from '@/components/ClientLogos';
 import { Beliefs } from './Beliefs';
 import { convictions, engagements, standards, valuesMarquee } from '@/content/site';
 import { JsonLd, breadcrumbLd, pageMeta } from '@/lib/seo';
@@ -14,7 +15,7 @@ export const metadata = pageMeta({
   path: '/about/',
 });
 
-const standardImages = ['powernest-2', 'command-c', 'kwoat-3', 'resolvr-3'];
+const standardImages = ['photo-multitask', 'photo-late', 'photo-analyst', 'photo-video-call'];
 
 export default function AboutPage() {
   return (
@@ -33,7 +34,7 @@ export default function AboutPage() {
 
       <section className="container-x pb-[120px] max-[809px]:pb-20" aria-label="Recent work">
         <div className="grid grid-cols-3 gap-4 max-[809px]:grid-cols-[1fr_1fr] max-[809px]:gap-2.5" data-reveal-group>
-          {['triumph-2', 'keybridge-c', 'resolvr-2'].map((k, i) => (
+          {['photo-meeting', 'photo-studio', 'photo-tablet'].map((k, i) => (
             <div key={k} className={`media media--light aspect-[4/3] rounded-[20px] ${i === 1 ? 'translate-y-6 max-[809px]:translate-y-0' : ''} ${i === 2 ? 'max-[809px]:hidden' : ''}`}>
               <Img src={k} alt="" sizes="(max-width: 809px) 50vw, 33vw" />
             </div>
@@ -151,6 +152,7 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <ClientLogos />
       <CtaPanel title="Looking for an engineering partner who cares about the details?" primary={{ label: 'Let’s talk', href: '/contact/' }} />
     </>
   );

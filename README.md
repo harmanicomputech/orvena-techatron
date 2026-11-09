@@ -60,7 +60,13 @@ To add a project: drop screenshots into `assets/source/` (`<key>-c.jpg` at 1440Ã
 ## Content sources and items to review
 
 - Operations hubs: Lagos, Nigeria and Delaware, USA, serving clients globally (`src/content/site.ts`).
-- "More work" on /work comes from the Drive doc *Portfolio / Websites*; Doowe, Nebo Concept (Cloudflare bot checks), Goldbrooks, Brick Homes (502 errors) and The eBook Club (no response) could not be captured and are not listed yet.
+- Client websites on /work: all 24 sites from the Drive doc *Portfolio / Websites* (`websites` in `src/content/projects.ts`).
+  Eight could not be screenshotted and show a branded card instead: acesolvit.com, cordiantresources.com.ng and
+  theebookclub.org (domains not resolving), houseontherockdublin.org (invalid SSL certificate), doowe.ng and
+  neboconcept.com (Cloudflare bot check), drffat85.com (403) and goldbrooks.com (502). Add a `<key>-c.jpg` screenshot
+  to `assets/source/` and an `image` key to replace any of them.
+- Client logos come from techatronagency.com (`public/images/clients/`); photography from Techatron's supplied image set
+  (`assets/source/photo-*.jpg`). The photos are used as general imagery and are not labelled as Techatron staff.
 
 - Company details, services, process, convictions and standards come from techatronagency.com.
 - Project descriptions come from Techatron's verified portfolio (`techatron-v2` seed data). ElectionShield, Kwoat and

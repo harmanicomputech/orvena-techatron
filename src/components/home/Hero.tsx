@@ -103,14 +103,8 @@ export function Hero() {
             <Img src="powernest-m" alt="" sizes="(max-width: 809px) 28vw, 240px" priority className="h-full w-full object-cover object-top" />
           </div>
           <div className="hero-show__main">
-            <div className="hero-show__bar">
-              <i />
-              <i />
-              <i />
-              <span>kwoat.ai</span>
-            </div>
             <div className="hero-show__screen">
-              <Img src="kwoat-c" alt="" sizes="(max-width: 1199px) 90vw, 980px" priority className="h-full w-full object-cover object-top" />
+              <Img src="photo-team" alt="" sizes="(max-width: 1199px) 90vw, 980px" priority className="h-full w-full object-cover object-center" />
             </div>
           </div>
           <div className="hero-show__phone hero-show__phone--r">

@@ -31,7 +31,7 @@ export function ProcessCards() {
             {(i === 1 || i === 3) && (
               <>
                 <Img
-                  src={i === 1 ? 'triumph-m' : 'keybridge-m'}
+                  src={i === 1 ? 'photo-graphic' : 'photo-manager'}
                   alt=""
                   sizes="(max-width: 809px) 100vw, 25vw"
                   className="absolute inset-0 h-full w-full object-cover object-top"
